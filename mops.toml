@@ -1,0 +1,13 @@
+[package]
+name = ""
+version = "0.0.1"
+description = ""
+repository = "https://github.com/edjcase/"
+keywords = []
+license = "MIT"
+
+[dependencies]
+core = "0.6.0"
+
+[dev-dependencies]
+test = "2.1.1"
