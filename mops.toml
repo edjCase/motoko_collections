@@ -1,10 +1,10 @@
 [package]
-name = ""
+name = "xtended-collections"
 version = "0.0.1"
-description = ""
-repository = "https://github.com/edjcase/"
-keywords = []
-license = "MIT"
+description = "A dynamic array implementation for basic operation, a fork of deprecated mo:base/Buffer"
+repository = "https://github.com/edjcase/motoko_dynamic_array"
+keywords = ["buffer", "dynamic", "array", "vector", "list"]
+license = "Apache-2.0"
 
 [dependencies]
 core = "0.6.0"
