@@ -692,6 +692,27 @@ module {
         nextElement;
       };
     };
+
+    /// Returns a Buffer interface for writing to this dynamicArray.
+    /// This allows the dynamicArray to be used with any function that accepts
+    /// a `Buffer.Buffer<X>` interface, providing interoperability with libraries
+    /// that can write to various buffer implementations (arrays, lists, etc.).
+    ///
+    /// Example:
+    ///
+    /// ```motoko include=initialize
+    /// Cbor.toBytesBuffer(dynamicArray.buffer(), cborValue);
+    /// let cborBytes = DynamicArray.toArray(dynamicArray) // => encoded bytes
+    /// ```
+    ///
+    /// | Runtime   | Space     |
+    /// |-----------|-----------|
+    /// | `O(1)` | `O(1)` |
+    public func buffer() : Buffer.Buffer<X> = object {
+      public func write(item : X) {
+        add(item);
+      };
+    };
   };
 
   /// Returns true if and only if the dynamicArray is empty.
