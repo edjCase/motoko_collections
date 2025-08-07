@@ -3,7 +3,7 @@
 [![MOPS](https://img.shields.io/badge/MOPS-xtended--collections-blue)](https://mops.one/xtended-collections)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/edjCase/motoko_xtended_collections/blob/main/LICENSE)
 
-A Motoko library that provides extended collections including a powerful `DynamicArray` implementation. This library offers a resizable array data structure that serves as an alternative to the deprecated Buffer module from the DFINITY Motoko Base Library.
+A Motoko library that provides extended collections including `DynamicArray` (fork of deprecated `mo:base/Buffer`)
 
 ## MOPS
 
