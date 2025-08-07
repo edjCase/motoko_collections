@@ -1341,11 +1341,11 @@ suite(
       func() {
         let testArray = DynamicArray.DynamicArray<Nat>(2);
         let buffer = testArray.buffer();
-        
+
         buffer.write(10);
         buffer.write(20);
         buffer.write(30);
-        
+
         assertArrayEqual(DynamicArray.toArray(testArray), [10, 20, 30], Nat.equal);
         assert testArray.size() == 3;
       },
@@ -1356,7 +1356,7 @@ suite(
       func() {
         let testArray = DynamicArray.DynamicArray<Nat>(1);
         let _buffer = testArray.buffer();
-        
+
         assert testArray.size() == 0;
         assert DynamicArray.toArray(testArray).size() == 0;
       },
@@ -1367,14 +1367,14 @@ suite(
       func() {
         let testArray = DynamicArray.DynamicArray<Nat>(2);
         let buffer = testArray.buffer();
-        
+
         // Simulate usage by a function that accepts Buffer.Buffer<X>
         func writeNumbers(buf : { write : Nat -> () }) {
           buf.write(1);
           buf.write(2);
           buf.write(3);
         };
-        
+
         writeNumbers(buffer);
         assertArrayEqual(DynamicArray.toArray(testArray), [1, 2, 3], Nat.equal);
       },
