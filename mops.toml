@@ -1,8 +1,8 @@
 [package]
 name = "xtended-collections"
-version = "0.0.2"
+version = "0.0.3"
 description = "Extended collections library for Motoko including dynamic arrays and other data structures"
-repository = "https://github.com/edjcase/motoko_dynamic_array"
+repository = "https://github.com/edjcase/motoko_collections"
 keywords = ["buffer", "dynamic", "array", "vector", "list"]
 license = "Apache-2.0"
 
