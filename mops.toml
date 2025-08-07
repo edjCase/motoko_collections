@@ -1,13 +1,14 @@
 [package]
 name = "xtended-collections"
 version = "0.0.1"
-description = "A dynamic array implementation for basic operation, a fork of deprecated mo:base/Buffer"
+description = "Extended collections library for Motoko including dynamic arrays and other data structures"
 repository = "https://github.com/edjcase/motoko_dynamic_array"
 keywords = ["buffer", "dynamic", "array", "vector", "list"]
 license = "Apache-2.0"
 
 [dependencies]
 core = "0.6.0"
+buffer = "0.0.1"
 
 [dev-dependencies]
 test = "2.1.1"

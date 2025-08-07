@@ -1,13 +1,18 @@
-Motoko Dynamic Array Library
+Motoko Extended Collections Library
 Copyright 2025 [Your Name/Organization]
 
 This product includes software developed by DFINITY Foundation.
 
-Portions of this software were originally developed as part of the Motoko Base Library:
+===============================================================================
 
+THIRD-PARTY SOFTWARE NOTICES:
+
+DynamicArray Module (src/DynamicArray.mo):
+
+-   Based on the Buffer module from the Motoko Base Library
 -   Original Repository: https://github.com/dfinity/motoko-base
 -   Original Copyright: DFINITY Foundation
 -   Original License: Apache License 2.0
+-   Extracted and adapted for continued maintenance after deprecation
 
-The original Buffer module was extracted and adapted for continued maintenance
-after the deprecation of the motoko-base library.
+All other components are original work unless otherwise noted in individual files.

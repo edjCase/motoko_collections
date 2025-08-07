@@ -1,8 +1,9 @@
 /// Dynamic Array (DynamicArray) implementation for Motoko
 ///
-/// Originally based on the DynamicArray module from the DFINITY Motoko Base Library
+/// Originally based on the Buffer module from the DFINITY Motoko Base Library
 /// (https://github.com/dfinity/motoko-base) under Apache License 2.0.
 /// Copyright DFINITY Foundation.
+/// Extracted and adapted for continued maintenance after deprecation.
 ///
 /// Class `DynamicArray<X>` provides a mutable list of elements of type `X`.
 /// It wraps a resizable underlying array and is comparable to `ArrayList` or `Vector` in other languages.
@@ -56,6 +57,7 @@ import Prim "mo:⛔";
 import Result "mo:core/Result";
 import Order "mo:core/Order";
 import Array "mo:core/Array";
+import Buffer "mo:buffer";
 
 module {
   type Order = Order.Order;
