@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "moc": "0.14.13",
+  "replica": "dfx",
+  "replicaVersion": "0.28.0",
+  "gc": "copying",
+  "forceGc": true,
+  "results": [
+    [
+      "DynamicArray:100",
+      {
+        "rts_stable_memory_size": 0,
+        "stable_memory_size": 0,
+        "instructions": 889979,
+        "rts_memory_size": 0,
+        "rts_total_allocation": 2920,
+        "rts_collector_instructions": 6583,
+        "rts_mutator_instructions": -10281,
+        "rts_logical_stable_memory_size": 0,
+        "rts_heap_size": 272,
+        "rts_reclaimed": 2648
+      }
+    ],
+    [
+      "DynamicArray:1000",
+      {
+        "rts_stable_memory_size": 0,
+        "stable_memory_size": 0,
+        "instructions": 84822413,
+        "rts_memory_size": 0,
+        "rts_total_allocation": 14052,
+        "rts_collector_instructions": 6594,
+        "rts_mutator_instructions": -7894,
+        "rts_logical_stable_memory_size": 0,
+        "rts_heap_size": 272,
+        "rts_reclaimed": 13780
+      }
+    ],
+    [
+      "DynamicArray:10000",
+      {
+        "rts_stable_memory_size": 0,
+        "stable_memory_size": 0,
+        "instructions": 8453399391,
+        "rts_memory_size": 131072,
+        "rts_total_allocation": 147000,
+        "rts_collector_instructions": 6951,
+        "rts_mutator_instructions": -7894,
+        "rts_logical_stable_memory_size": 0,
+        "rts_heap_size": 308,
+        "rts_reclaimed": 146692
+      }
+    ],
+    [
+      "StableDynamicArray:100",
+      {
+        "rts_stable_memory_size": 0,
+        "stable_memory_size": 0,
+        "instructions": 1198355,
+        "rts_memory_size": 0,
+        "rts_total_allocation": 2520,
+        "rts_collector_instructions": 6594,
+        "rts_mutator_instructions": -7894,
+        "rts_logical_stable_memory_size": 0,
+        "rts_heap_size": 272,
+        "rts_reclaimed": 2248
+      }
+    ],
+    [
+      "StableDynamicArray:1000",
+      {
+        "rts_stable_memory_size": 0,
+        "stable_memory_size": 0,
+        "instructions": 114904884,
+        "rts_memory_size": 0,
+        "rts_total_allocation": 13652,
+        "rts_collector_instructions": 6594,
+        "rts_mutator_instructions": -7894,
+        "rts_logical_stable_memory_size": 0,
+        "rts_heap_size": 272,
+        "rts_reclaimed": 13380
+      }
+    ],
+    [
+      "StableDynamicArray:10000",
+      {
+        "rts_stable_memory_size": 0,
+        "stable_memory_size": 0,
+        "instructions": 11454219496,
+        "rts_memory_size": 0,
+        "rts_total_allocation": 146600,
+        "rts_collector_instructions": 6951,
+        "rts_mutator_instructions": -7894,
+        "rts_logical_stable_memory_size": 0,
+        "rts_heap_size": 308,
+        "rts_reclaimed": 146292
+      }
+    ]
+  ]
+}

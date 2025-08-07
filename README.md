@@ -3,7 +3,7 @@
 [![MOPS](https://img.shields.io/badge/MOPS-xtended--collections-blue)](https://mops.one/xtended-collections)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/edjCase/motoko_xtended_collections/blob/main/LICENSE)
 
-A Motoko library that provides extended collections including `DynamicArray` (fork of deprecated `mo:base/Buffer`)
+A Motoko library that provides extended collections including `DynamicArray` (fork of deprecated `mo:base/Buffer`) and `StableDynamicArray` (fork of `canscale/StableBuffer`)
 
 ## MOPS
 
@@ -188,12 +188,48 @@ Most operations have the following complexity:
 -   The array maintains the invariant that `capacity >= size`
 -   Recommended for storing data in stable variables by converting to arrays first
 
+## StableDynamicArray Module
+
+The `StableDynamicArray<X>` module provides persistent, stable dynamic arrays that maintain their state across canister upgrades. Unlike the class-based `DynamicArray`, this is a module with functions that operate on a stable data structure.
+
+### Key Features
+
+-   **Upgrade-safe**: Maintains state across canister upgrades when declared as `stable`
+-   **Functional interface**: Uses module functions instead of class methods
+-   **Same performance characteristics**: Similar O(1) amortized operations as DynamicArray
+-   **Compatible API**: Most operations mirror the DynamicArray interface
+
+### Example Usage
+
+```motoko
+import StableDynamicArray "mo:xtended-collections/StableDynamicArray";
+
+// Declare as stable to persist across upgrades
+stable let stableArray = StableDynamicArray.init<Nat>();
+
+// Add elements
+StableDynamicArray.add(stableArray, 42);
+StableDynamicArray.add(stableArray, 100);
+
+// Access elements
+let size = StableDynamicArray.size(stableArray);
+let firstElement = StableDynamicArray.get(stableArray, 0);
+```
+
+See the module documentation for the complete API reference.
+
 ## Attribution
 
 **DynamicArray Module**: This module contains code originally from the [DFINITY Motoko Base Library](https://github.com/dfinity/motoko-base), specifically the `Buffer` module. The original code is licensed under Apache License 2.0.
 
 -   Original Copyright: DFINITY Foundation
 -   Original Repository: https://github.com/dfinity/motoko-base
+-   Original License: Apache License 2.0
+
+**StableDynamicArray Module**: This module contains code originally from the [canscale StableBuffer](https://github.com/canscale/StableBuffer) repository. The original code is licensed under Apache License 2.0.
+
+-   Original Copyright: canscale organization and contributors
+-   Original Repository: https://github.com/canscale/StableBuffer
 -   Original License: Apache License 2.0
 
 All other components in this library are original work unless otherwise noted.
