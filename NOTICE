@@ -15,4 +15,12 @@ DynamicArray Module (src/DynamicArray.mo):
 -   Original License: Apache License 2.0
 -   Extracted and adapted for continued maintenance after deprecation
 
+StableDynamicArray Module (src/StableDynamicArray.mo):
+
+-   Based on the StableBuffer module from the canscale organization
+-   Original Repository: https://github.com/canscale/StableBuffer
+-   Original Copyright: canscale organization and contributors
+-   Original License: Apache License 2.0
+-   Extracted and adapted with modifications
+
 All other components are original work unless otherwise noted in individual files.

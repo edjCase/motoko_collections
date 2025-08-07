@@ -1,3 +1,10 @@
+/// Stable Dynamic Array (StableDynamicArray) implementation for Motoko
+///
+/// Originally based on the StableBuffer module from the canscale organization
+/// (https://github.com/canscale/StableBuffer) under Apache License 2.0.
+/// Copyright canscale organization and contributors.
+/// Extracted and adapted with modifications for this library.
+///
 /// Generic, extensible dynamic arrays
 ///
 /// `StableDynamicArray<X>` is adapted directly from https://github.com/dfinity/motoko-base/blob/master/src/DynamicArray.mo,
