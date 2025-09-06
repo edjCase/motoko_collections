@@ -1,5 +1,5 @@
 import StableDynamicArray "../src/StableDynamicArray";
-import Nat "mo:core/Nat";
+import Nat "mo:core@1/Nat";
 
 import { test; suite } "mo:test";
 

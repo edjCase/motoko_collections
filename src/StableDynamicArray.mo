@@ -24,9 +24,9 @@
 /// determined at construction and cannot be changed).
 
 import Prim "mo:⛔";
-import Result "mo:core/Result";
-import Order "mo:core/Order";
-import Array "mo:core/Array";
+import Result "mo:core@1/Result";
+import Order "mo:core@1/Order";
+import Array "mo:core@1/Array";
 
 module {
   type Order = Order.Order;

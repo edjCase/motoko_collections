@@ -1,6 +1,6 @@
 import Bench "mo:bench";
-import Nat "mo:core/Nat";
-import Runtime "mo:core/Runtime";
+import Nat "mo:core@1/Nat";
+import Runtime "mo:core@1/Runtime";
 import DynamicArray "../src/DynamicArray";
 import StableDynamicArray "../src/StableDynamicArray";
 

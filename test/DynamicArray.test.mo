@@ -1,6 +1,6 @@
 import DynamicArray "../src/DynamicArray";
-import Nat "mo:core/Nat";
-import Nat32 "mo:core/Nat32";
+import Nat "mo:core@1/Nat";
+import Nat32 "mo:core@1/Nat32";
 
 import { test; suite } "mo:test";
 
